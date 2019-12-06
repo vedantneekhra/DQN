@@ -22,6 +22,6 @@ The policy which I have used is Epsilon greedy.
 * Relu and PRelu activation was used and have negative effect over q function approximation as reward becomes negative when the episode ends.
 * Decreased the value of both positive and negative reward so that neural net can fit the q function without altering the value of q function at any other state.
 * Unstable nature of neural net - using neural net directly in place of q table in highly unstable. Techique used for stablization of neural net :
- * Used two neural net, one for q-function for value iterator and other q-function for policy.
- * Update q-function for policy after some episodes of value iterator so that value becomes optimal for that policy.
+    * Used two neural net, one for q-function for value iterator and other q-function for policy.
+    * Update q-function for policy after some episodes of value iterator so that value becomes optimal for that policy.
 * Other than using replay buffer as it is memory efficient way, I feed forward the network after every state transition and backpropogated it at the end of the episode. This also stabilized the neural net.
