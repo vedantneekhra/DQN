@@ -2,6 +2,9 @@
 
 ![Image of Cartpole](Image/cartPole.gif)
 
+## key Point
+Memory Optimal Approach
+
 ## Introduction
 I have developed a value-based reinforcement agent for cartpole module of openAI gym. I have Neural Network a non-linear function approximator for approximating q-function. 
 
@@ -28,4 +31,6 @@ The policy which I have used is Epsilon greedy.
 
 ## TODO
 - Modify value iterator to TD(lamda) in Backward Veiw (feel it will converge value function earlier because agent receives negative reward at the end of the episode and using backward veiw will propogate it backward earlier).
+
+
 
